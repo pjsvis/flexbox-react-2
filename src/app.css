@@ -1,0 +1,57 @@
+:root {
+  --space: 1.5em 0;
+  --space: 2em 0;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+.site-content:after {
+  content: "\00a0";
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+.bg-rbs-blue {
+  background-color: #0a2f64;
+}
+
+/* Additional styles for fitting divs to content */
+.fit-h {
+  height: fit-content;
+}
+
+.fit-w {
+  width: fit-content;
+}
+
+.fit {
+  height: fit-content;
+  width: fit-content;
+}
+
+/* sticky postioning for progress menu */
+.sticky {
+  position: sticky;
+}
+
+/* Add btn-xs for Bootstrap 4 Ref: https://github.com/twbs/bootstrap/issues/21881 */
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.875rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
+}
+/* END btn-xs */
