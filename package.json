@@ -8,8 +8,10 @@
     "@kevinwolf/formal": "latest",
     "@kevinwolf/formal-web": "latest",
     "@types/react-select": "2.0.19",
+    "@types/react-tabs": "^2.3.1",
     "@types/react-textarea-autosize": "latest",
     "colors.css": "3.0.0",
+    "prop-types": "^15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-markdown": "4.0.8",
@@ -19,7 +21,9 @@
     "react-tabs": "3.0.0",
     "react-textarea-autosize": "latest",
     "tachyons": "4.11.1",
-    "unstated": "2.1.1"
+    "typescript": "^3.5.2",
+    "unstated": "2.1.1",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@types/react": "16.7.22",
