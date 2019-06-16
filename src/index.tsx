@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import { Provider } from "unstated";
 import { ErrorBoundary } from "./error-boundary";
 import "tachyons";
+import "animate.css";
 import "./app.css";
 import { App } from "./app";
 import { Footer } from "./footer";
@@ -27,6 +28,7 @@ const withFooter = (WrappedComponent: $TsFixMe) => () => (
     <Footer key="2" />
   </>
 );
+
 
 const WrapperWithFooter = withFooter(Wrapper);
 
