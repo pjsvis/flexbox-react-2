@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./error-boundary.css";
 
-const logErrorToMyService = (error: any, info: any) => {
+const logErrorToMyService = (error: $TsFixMe, info: $TsFixMe) => {
   // tslint:disable-next-line:no-console
   console.log(info);
   // tslint:disable-next-line:no-console
@@ -10,12 +10,12 @@ const logErrorToMyService = (error: any, info: any) => {
 interface Props {}
 interface State {
   hasError: boolean;
-  error: any;
-  info: any;
+  error: $TsFixMe;
+  info: $TsFixMe;
 }
 export class ErrorBoundary extends React.Component {
   state: State = { hasError: false, error: undefined, info: undefined };
-  componentDidCatch = (error: any, info: any) => {
+  componentDidCatch = (error: $TsFixMe, info: $TsFixMe) => {
     // Display fallback UI
     this.setState({ hasError: true, error: error, info: info });
     // You can also log the error to an error reporting service
