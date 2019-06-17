@@ -22,6 +22,31 @@ export const Main = (props: Props) => {
           <div className="hi2 f6">main</div>
           <div className="hi2 f6">main</div>
           <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+           <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+          <div className="hi2 f6">main</div>
+
+
         </div>
         <div className={sideColStyle}>
             <div className="hi2 f6">right</div>
