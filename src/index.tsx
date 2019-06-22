@@ -21,14 +21,13 @@ const Wrapper = (props: Props) => (
     </Provider>
   </ErrorBoundary>
 );
-
+// $TsFixMe is an alias for type any to make it easier to search for
 const withFooter = (WrappedComponent: $TsFixMe) => () => (
   <>
     <WrappedComponent key="1" />,
     <Footer key="2" />
   </>
 );
-
 
 const WrapperWithFooter = withFooter(Wrapper);
 

@@ -15,7 +15,7 @@ export const App = (props: Props) => {
         <>
           <div className="content">
             <Header />
-            <Sticky enabled={true} top={78} bottomBoundary={10000} innerZ={2}>
+            <Sticky enabled={true} top={0} bottomBoundary={10000} innerZ={2}>
               <StickyMenu />
             </Sticky>
             <Main />
