@@ -24,7 +24,6 @@ export const Main = (props: Props) => {
               <label>Outline</label>
             </div>
           </div>
-
           <div className="pretty p-switch p-fill p-pulse">
             <input type="checkbox" />
             <div className="state p-danger">
