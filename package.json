@@ -6,8 +6,6 @@
   "main": "src/index.tsx",
   "license": "16.8.6",
   "dependencies": {
-    "@kevinwolf/formal": "latest",
-    "@kevinwolf/formal-web": "latest",
     "@types/react-select": "2.0.19",
     "@types/react-tabs": "^2.3.1",
     "@types/react-textarea-autosize": "latest",
