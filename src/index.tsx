@@ -16,6 +16,7 @@ interface Props {}
  * react sticky footer with provider @see<https://codesandbox.io/s/8xz3l2771l?from-embed>
  */
 const Wrapper = (props: Props) => (
+  // @ts-ignore
   <ErrorBoundary>
     <Provider>
       <App />
