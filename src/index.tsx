@@ -7,6 +7,7 @@ import "animate.css";
 import "./app.css";
 import { App } from "./app";
 import { Footer } from "./footer";
+import "pretty-checkbox/dist/pretty-checkbox.min.css";
 
 interface Props {}
 
