@@ -6,7 +6,7 @@ interface Props {}
  * @see<https://www.codeseek.co/elussich/flex-layout-samples-with-tachyons-KNPqLJ>
  */
 export const Header = (props: Props) => {
-  const navStyle = "cf bg-rbs-blue mb3 animated fadeIn fast sticky  shadow-4";
+  const navStyle = "cf bg-rbs-blue mb3 animated fadeIn fast sticky  shadow-4 z-1";
   const leftStyle = "fl w-50 ";
   const rightStyle = "fr w-50 tr mt3 ";
 

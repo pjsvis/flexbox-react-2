@@ -1,12 +1,11 @@
-import * as React from "react";
-import { FormExample } from "./form-example";
-interface Props {}
+import * as React from 'react';
+import { FormExample } from './form-example';
 
 /**
  * @see<https://www.codeseek.co/elussich/flex-layout-samples-with-tachyons-KNPqLJ>
  */
-export const Main = (props: Props) => {
-  const mainColStyle = "w-100 ba br3 b--black-10 pa3 ml3 mr3 shadow-4";
+export const Main = (): JSX.Element => {
+  const mainColStyle = 'w-100 ba br3 b--black-10 pa3 ml3 mr3 shadow-4';
   return (
     <>
       <div className="flex justify-between pa2 animated fadeIn fast">
@@ -69,72 +68,6 @@ export const Main = (props: Props) => {
               <label>Paris</label>
             </div>
           </div>
-
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
-          <div className="hi2 f6">main</div>
         </div>
       </div>
     </>

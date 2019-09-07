@@ -1,4 +1,4 @@
-import { Container } from "unstated";
+import { Container } from 'unstated';
 
 interface State {
   isDev: boolean;
@@ -6,7 +6,7 @@ interface State {
 
 class SaContainer extends Container<State> {
   state: State = {
-    isDev: true
+    isDev: true,
   };
 }
 

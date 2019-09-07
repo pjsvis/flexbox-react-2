@@ -15,6 +15,7 @@ interface AddressDetails {
 
 interface Breach {
   id: number | null;
+  status: string;
   aboutYou: AboutYou;
   addressDetails: AddressDetails;
 }
@@ -22,43 +23,44 @@ interface Breach {
 // Example breach record
 const breach: Breach = {
   id: 1,
+  status: 'ABOUTYOU',
   aboutYou: {
-    firstName: "Peter",
-    lastName: "Smith",
+    firstName: 'Peter',
+    lastName: 'Smith',
     age: 21,
     isResident: true,
-    favouriteColours: ["red", "yellow", "blue"]
+    favouriteColours: ['red', 'yellow', 'blue'],
   },
   addressDetails: {
     houseNum: 27,
-    street: "Sloan Street",
-    town: "Edinburgh"
-  }
+    street: 'Sloan Street',
+    town: 'Edinburgh',
+  },
 };
 
-console.log("input breach", breach);
-
 // combined section fields
-type Combined = AboutYou & AddressDetails;
+type FormValues = AboutYou & AddressDetails;
 const aboutYou = breach.aboutYou;
 const addressDetails = breach.addressDetails;
 
-const initialValues = { ...aboutYou, ...addressDetails };
+// create our initial values that we will send in to the form
+const initialValues: FormValues = { ...aboutYou, ...addressDetails };
 
 // final-form mutates returns the changed initial values
-const formValues: Partial<Combined> = {
-  firstName: "Erik",
-  lastName: "Rasmussen",
+const formValues: Partial<FormValues> = {
+  firstName: 'Erik',
+  lastName: 'Rasmussen',
   isResident: false,
-  favouriteColours: ["pink", "cerise", "indigo"],
+  favouriteColours: ['pink', 'cerise', 'indigo'],
   // houseNum: 42,
   // street: "Black Street",
-  town: "Glasgow"
+  town: 'Glasgow',
 };
 
 // merge the updated and initial values
-const initAndFormValues: Combined = { ...initialValues, ...formValues };
+const updatedFormValues: FormValues = { ...initialValues, ...formValues };
 
+// destructure all of the form values
 const {
   firstName,
   lastName,
@@ -67,18 +69,20 @@ const {
   favouriteColours,
   houseNum,
   street,
-  town
-}  = initAndFormValues;
+  town,
+} = updatedFormValues;
 
+// recreate the breach sections
 const updatedAboutYou: AboutYou = {
   firstName,
   lastName,
   isResident,
   age,
-  favouriteColours
+  favouriteColours,
 };
 const updatedAddressDetails: AddressDetails = { houseNum, street, town };
 
+// add the updated sections to the breach
 breach.aboutYou = updatedAboutYou;
 breach.addressDetails = updatedAddressDetails;
-console.log("updated breach", breach);
+breach.status = 'ADDRESSDETAILS';

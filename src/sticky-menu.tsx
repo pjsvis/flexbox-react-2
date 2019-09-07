@@ -1,8 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
+import { FC } from 'react';
 
-interface Props {}
-
-export const StickyMenu = (props: Props) => {
+export const StickyMenu: FC = () => {
+  StickyMenu.displayName = 'StickyMenu';
   return (
     <>
       <article className="fr mr3 mt2">
