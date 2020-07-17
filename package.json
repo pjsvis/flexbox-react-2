@@ -16,7 +16,7 @@
     "animate.css": "^3.7.2",
     "colors.css": "3.0.0",
     "informed": "^2.11.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "pretty-checkbox": "^3.0.3",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
