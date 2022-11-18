@@ -22,7 +22,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-markdown": "4.0.8",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-select": "3.0.3",
     "react-select-simple-value": "^1.2.1",
     "react-stickynode": "^2.1.1",
